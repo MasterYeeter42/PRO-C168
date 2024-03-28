@@ -14,20 +14,23 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  
   <!-- Local StyleSheet -->
   <link href="./style.css" rel="stylesheet" />
 
   <!--JS Files-->
+  <script src="./js/markerHandler.js"></script>
   <script src="./js/addButtons.js"></script>
 
 </head>
 
 <body style="margin : 0px; overflow: hidden;">
-
   <a-scene vr-mode-ui="enabled: false" embedded arjs="sourceType: webcam; 
     sourceWidth:1280; sourceHeight:960; 
     displayWidth: 1280; displayHeight: 960; 
-    debugUIEnabled: false;" gesture-detector create-buttons>
+    debugUIEnabled: false;"
+    gesture-detector create-buttons>
 
     <!-- Camera -->
     <a-entity camera></a-entity>
